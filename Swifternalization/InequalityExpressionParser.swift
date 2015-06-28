@@ -32,6 +32,6 @@ class InequalityExpressionParser: ExpressionParser {
     
     // Get value from the pattern
     private func value() -> Int {
-        return Regex.firstMatchInString(expression, pattern: "\\d+")!.toInt()!
+        return Int(Regex.firstMatchInString(expression, pattern: "\\d+")!)!
     }
 }

@@ -23,7 +23,7 @@ struct InequalityExpressionMatcher: ExpressionMatcher {
     func validate(val: String) -> Bool {
         switch valueType {
         case .Integer:
-            let n = val.toInt()!
+            let n = Int(val)!
             
             switch sign {
             case .LessThan: return n < value

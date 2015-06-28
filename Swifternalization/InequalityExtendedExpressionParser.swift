@@ -24,7 +24,7 @@ class InequalityExtendedExpressionParser: ExpressionParser {
     
     // Get first number
     private func firstValue() -> Int {
-        return Regex.firstMatchInString(expression, pattern: "(?<=^iex:)\\d+")!.toInt()!
+        return Int(Regex.firstMatchInString(expression, pattern: "(?<=^iex:)\\d+")!)!
     }
     
     // Get first inequality sign - this one is inverted to fit the logic in the pattern
@@ -44,6 +44,6 @@ class InequalityExtendedExpressionParser: ExpressionParser {
     
     // Get second value
     private func secondValue() -> Int {
-        return Regex.firstMatchInString(expression, pattern: "(?<=%[d]<=|<|=|>=|>)(\\d+)")!.toInt()!
+        return Int(Regex.firstMatchInString(expression, pattern: "(?<=%[d]<=|<|=|>=|>)(\\d+)")!)!
     }    
 }

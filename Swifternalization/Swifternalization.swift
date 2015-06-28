@@ -57,7 +57,7 @@ public class Swifternalization {
     
     private func getPreferredLanguage() -> Language {
         // Get preferred language, the one which is set on user's device
-        return bundle.preferredLocalizations.first as! Language
+        return bundle.preferredLocalizations.first! as Language
     }
     
     /**

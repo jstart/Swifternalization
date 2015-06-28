@@ -17,8 +17,8 @@ class LocalizableFilesLoaderTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        var bundle = NSBundle(forClass: self.dynamicType)
-        language = bundle.preferredLocalizations.first as! String
+        let bundle = NSBundle(forClass: self.dynamicType)
+        language = bundle.preferredLocalizations.first!
         loader = LocalizableFilesLoader(bundle)
     }
     
