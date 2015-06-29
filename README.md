@@ -1,7 +1,30 @@
 ![Swifternalization: localize apps smarter](https://raw.githubusercontent.com/tomkowz/Swifternalization/master/page-assets/swifternalization-header.png)
 
-# Swifternalization
+[![Build Status](https://travis-ci.org/tomkowz/Swifternalization.svg?branch=master)](https://travis-ci.org/tomkowz/Swifternalization) <a href="https://flattr.com/submit/auto?user_id=tomkowz&url=http%3A%2F%2Fgithub.com%2Ftomkowz%2FSwifternalization" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
+
+Swifternalization is library that helps in localizing apps. It is written in Swift.
+
+# Features
+- [x] Pluralization support - Avoids using .stringdicts
+- [x] Expressions - inequality and regular expressions in Localizable.strings
+- [x] Shared expressions
+- [x] Built-in expressions
+- [x] Works similarly to NSLocalizedString() macro
+- [x] Uses Localizable.strings file as NSLocalizedString() macro does
+- [x] Comprehensive Unit Test Coverage
+
+# Swifternalization 
 Swifternalization helps in localizing apps in a smarter way. It has been created because of necessary to solve Polish language internalization problems but it is universal and works with every language. 
+
+## Installation
+
+With CocoaPods:
+
+    pod 'Swifternalization', '~> 1.0.2'
+
+Without CocoaPods:
+If you want to integrate it with your project just import files from *Swifternalization/Swifternalization* directory.
+
 
 ## Real Example
 
@@ -129,9 +152,6 @@ Swifternalization also drops need for having *.stringdicts* files like this one:
 	    </dict>
 	</plist>
 
-## Installation
-
-Pod is not created yet, will be soon. If you want to integrate it with your project just import files from *Swifternalization/Swifternalization* directory.
 
 ## Getting Started
 
