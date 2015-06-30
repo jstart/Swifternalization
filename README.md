@@ -14,6 +14,7 @@ Swifternalization is library that helps in localizing apps. It is written in Swi
 - [x] Works similarly to NSLocalizedString() macro
 - [x] Uses Localizable.strings file as NSLocalizedString() macro does
 - [x] Comprehensive Unit Test Coverage
+- [x] Full documentation
 
 # Swifternalization 
 Swifternalization helps in localizing apps in a smarter way. It has been created because of necessary to solve Polish language internalization problems but it is universal and works with every language. 
@@ -30,10 +31,17 @@ Without CocoaPods:
 If you want to integrate it with your project just import files from *Swifternalization/Swifternalization* directory.
 
 ## Documentation
-Swifternalization documentation covers 100% of the code, Yay! Two types of documentation have been generated. One covers only public API which is great for those who only wants to use the framework without looking inside. The second one covers all the API public, internal and private. (The best for now is to download repository since I'm working on making it easily browsable).
+Swifternalization documentation covers 100% of the code, Yay! There are two types of documentation. First covers only public API which is great for those who only want to use the framework without looking inside. The second one covers all the API - public, internal and private. 
 
-- [Public API documentation](https://github.com/tomkowz/Swifternalization/tree/master/docs/public)
-- [Full API documentation](https://github.com/tomkowz/Swifternalization/tree/master/docs/framework)
+You can find Public API and Full documentation with docset here in [docs](https://github.com/tomkowz/Swifternalization/tree/master/docs) directory. 
+
+It is also hosted on [my blog](http://szulctomasz.com):
+- [Public API documentation](http://szulctomasz.com/docs/swifternalization/public/)
+- [Full API documentation](http://szulctomasz.com/docs/swifternalization/framework/)
+
+Docsets:
+- [Public API docset](http://szulctomasz.com/docs/swifternalization/public/docsets/Swifternalization%20Public%20API.docset.zip)
+- [Full API docset](http://szulctomasz.com/docs/swifternalization/framework/docsets/Swifternalization.docset.zip)
 
 ## Real Example
 
